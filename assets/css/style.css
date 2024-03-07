@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Poppins-black";
+  src: url("../font/Poppins-Black.eot");
+  src: url("../font/Poppins-Black.eot?#iefix") format("embedded-opentype"),
+    url("../font/Poppins-Black.woff2") format("woff2"),
+    url("../font/Poppins-Black.woff") format("woff"),
+    url("../font/Poppins-Black.ttf") format("truetype"),
+    url("../font/poppins/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.eot");
+  src: url("../font/Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Poppins-Regular.woff2") format("woff2"),
+    url("../font/Poppins-Regular.woff") format("woff"),
+    url("../font/Poppins-Regular.ttf") format("truetype"),
+    url("../font/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url("../font/Poppins-Light.eot");
+  src: url("../font/Poppins-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/Poppins-Light.woff2") format("woff2"),
+    url("../font/Poppins-Light.woff") format("woff"),
+    url("../font/Poppins-Light.ttf") format("truetype"),
+    url("../font/Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins";
+}
+.nav-bar {
+  font-family: "Poppins-black";
+}
+.signup-button:hover {
+  transform: translateY(-2px);
+  transition: transform 0.5s ease-in;
+}
+.background-image-start {
+  background-image: linear-gradient(90deg, #95a5a6 65.5%, #2c3e50 30%);
+  width: 100%;
+  height: 100%;
+}
+.start-part {
+  height: 550px;
+  background-image: url("../img/living-room-interior_1284-6868\ \(1\)-svg.svg");
+  background-size: cover;
+}
+.trust-part-style{
+  background-color: #2c3e50;
+  width: 101%;
+}
+@media screen and (max-width: 555px) {
+  .nav-bar {
+    display: none;
+  }
+  .signup-button{
+   margin-left: auto !important;
+  }
+}
+@media screen and (max-width:770px){
+  .slide-part{
+    justify-content: center !important;
+  }
+  .trust-part-style img{
+    width: 100%;
+}}
+@media screen and (max-width:1040px){
+  .trust-part-style{
+ flex-direction: column;
+}
+.trust-part-style img{
+  width: 50%;
+}
+}
